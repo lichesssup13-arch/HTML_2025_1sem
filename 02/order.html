@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Сделать заказ</title>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Кофейня "Уютный уголок"</title>
+      <style>
+        .nav-active {
+          background-color: #4e6bff7e;
+          font-weight: bold;
+          color: #fff;
+          padding: 5px;
+          border-radius: 3px;
+        }
+        ul li a {
+          text-decoration: none;
+          color: #333;
+          padding: 5px;
+          display: block;
+        }
+        ul li a:hover {
+          background-color: #a9b5ff;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- Навигация -->
+      <nav>
+        <ul>
+          <li><a href="example.html">Главная</a></li>
+
+          <li><a href="order.html" class="nav-active">Заказ онлайн</a></li>
+          <li>
+            <a
+              href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5"
+              target="_blank"
+              >История кофе</a
+            >
+          </li>
+          <li>
+            <a href="partner.html">Наши партнеры</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Раздел 5: Форма заказа -->
+
+      <h2 align="center">Онлайн заказ</h2>
+
+      <form
+        action="https://www.bing.com/search?"
+        id="UserEnter"
+        name="UserEnter"
+        target="_blank"
+        align="center"
+      >
+        <p>Введите данные:<input type="hidden" name="q" value="search" /></p>
+
+        <p for="customer_name">
+          Ваше имя:
+          <input
+            type="text"
+            id="customer_n ame"
+            name="customer_name"
+            size="20"
+            value="Kирилл Пирожков"
+            required
+          />
+        </p>
+        <p for="order_date">
+          Дата получения заказа:
+          <input type="date" id="order_date" name="order_date" required />
+        </p>
+
+        <p>Выберите напиток:</p>
+
+        <p for="espresso">
+          <input
+            type="radio"
+            id="espresso"
+            name="drink"
+            value="espresso"
+            checked
+          />Эспрессо (180 ₽)
+        </p>
+
+        <p for="cappuccino">
+          <input
+            type="radio"
+            id="cappuccino"
+            name="drink"
+            value="cappuccino"
+          />Капучино (250 ₽)
+        </p>
+
+        <p for="americano">
+          <input
+            type="radio"
+            id="americano"
+            name="drink"
+            value="americano"
+          />Американо (200 ₽)
+        </p>
+
+        <p>Добавки:</p>
+
+        <p for="milk">
+          <input type="checkbox" id="milk" name="additives" value="milk" />
+          Молоко (30 ₽)
+        </p>
+
+        <p for="cinnamon">
+          <input
+            type="checkbox"
+            id="cinnamon"
+            name="additives"
+            value="cinnamon"
+          />Корица (20 ₽)
+        </p>
+
+        <p for="syrup">
+          <input
+            type="checkbox"
+            id="syrup"
+            name="additives"
+            value="syrup"
+          />Сироп (40 ₽)
+        </p>
+
+        <p for="quantity">
+          Количество:
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="10"
+            value="1"
+            required
+          />
+        </p>
+
+        <p for="password">
+          Пароль для изменения заказа:
+
+          <input type="password" id="password" name="password" />
+        </p>
+
+        <p for="comments">
+          Комментарии к заказу:
+          <textarea id="comments" name="comments" rows="4"></textarea>
+        </p>
+
+        <input type="hidden" name="function" value="page" />
+        <input type="hidden" name="page_id" value="3" />
+
+        <p>
+          <input type="Reset" name="Reset" value="Обновить" />
+          <input type="Submit" name="submit" value="Отправить" />
+        </p>
+      </form>
+    </body>
+  </head>
+</html>
