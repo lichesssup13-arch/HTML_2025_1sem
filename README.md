@@ -6,4 +6,4 @@ https://lichesssup13-arch.github.io/HTML_2025_1sem/14-15/01/index.html
 https://lichesssup13-arch.github.io/HTML_2025_1sem/02/example.html
 
 
-https://lichesssup13-arch.github.io/HTML_2025_1sem/02/algoritm_ex.html
+https://lichesssup13-arch.github.io/HTML_2025_1sem/14-15/01/algoritm_ex.html
