@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кофейня "Уютный уголок"</title>
+    <style>
+
+      .nav-active {
+        background-color: #4e6bff7e;
+        font-weight: bold;
+        color: #fff;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+        display: block;
+      }
+      ul li a:hover {
+        background-color: #a9b5ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav>
+   
+        <ul>
+          <li><a href="#home" class="nav-active">Главная</a></li>
+
+          <li><a href="order.html" >Заказ онлайн</a></li>
+          <li>
+            <a
+              href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5"
+              target="_blank"
+              >История кофе</a
+            >
+          </li>
+          <li>
+            <a
+              href="partner.html"
+
+              >Наши партнеры</a
+            >
+          </li>
+         
+        </ul>
+
+    </nav>
+
+    <!-- Главный заголовок -->
+    <header id="home">
+      <div class="container">
+        <h1 align="center">Кофейня "Уютный уголок"</h1>
+        <p>Место, где каждый глоток кофе рассказывает свою историю</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Внутренняя навигация -->
+      <div class="internal-nav">
+        <a href="#section1">Наша философия</a>
+        <a href="#section2">Почему мы</a>
+        <a href="#section3">Отзывы</a>
+        <a href="#home">К началу</a>
+      </div>
+
+      <!-- Раздел 1: О нас -->
+      <section id="about">
+        <h2 align="center">О нашей кофейне</h2>
+
+        <div id="section1">
+          <h3>Наша философия</h3>
+          <p>
+            Мы создали "Уютный уголок" как место, где каждый может найти свой
+            идеальный кофе и насладиться моментом покоя в суете большого города.
+          </p>
+
+          <p>Наши принципы:</p>
+          <ul>
+            <li>Только свежеобжаренные зерна арабики</li>
+            <li>Индивидуальный подход к каждому клиенту</li>
+            <li>Экологичная упаковка и ответственное потребление</li>
+            <li>Поддержка локальных производителей</li>
+          </ul>
+        </div>
+
+        <div id="section2">
+          <h3>Почему выбирают нас</h3>
+          <ol>
+            <li>Лучшие бариста города</li>
+            <li>
+              Уникальные авторские рецепты
+              <ul>
+                <li>Сезонные предложения</li>
+                <li>Десерты ручной работы</li>
+              </ul>
+            </li>
+            <li>Уютная атмосфера для работы и отдыха</li>
+            <li>Доступные цены при высоком качестве</li>
+          </ol>
+        </div>
+
+        <div id="section3">
+          <h3>Что говорят наши гости</h3>
+          <p>Вот некоторые из отзывов наших постоянных посетителей:</p>
+          <ul>
+            <li>
+              "Лучший капучино в городе! Обязательно попробуйте с корицей." -
+              Мария
+            </li>
+            <li>
+              "Обожаю приходить сюда с ноутбуком. Быстрый Wi-Fi и уютная
+              атмосфера." - Алексей
+            </li>
+            <li>
+              "Тирамису просто восхитителен! Заказываю каждый раз." - Анна
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Раздел 2: Меню -->
+      <section id="menu">
+        <h2 align="center">Наше меню</h2>
+        <!--ОФОРМИТЬ ТАБЛИЦУ-->
+        <table>
+          <thead>
+            <tr>
+              <th>Категория</th>
+              <th>Наименование</th>
+              <th>Описание</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">Напитки</td>
+              <td>Эспрессо</td>
+              <td>Крепкий и ароматный кофе</td>
+              <td>180 ₽</td>
+            </tr>
+            <tr>
+              <td>Капучино</td>
+              <td>С молочной пенкой и рисунком</td>
+              <td>250 ₽</td>
+            </tr>
+            <tr>
+              <td>Американо</td>
+              <td>Классический черный кофе</td>
+              <td>200 ₽</td>
+            </tr>
+            <tr>
+              <td rowspan="4">Десерты</td>
+              <td>Чизкейк</td>
+              <td>Нью-Йоркский чизкейк</td>
+              <td>320 ₽</td>
+            </tr>
+            <tr>
+              <td>Тирамису</td>
+              <td>Итальянский десерт с кофе</td>
+              <td>350 ₽</td>
+            </tr>
+            <tr>
+              <td>Эклеры</td>
+              <td>С заварным кремом</td>
+              <td>180 ₽</td>
+            </tr>
+            <tr>
+              <td>Макаруны</td>
+              <td>Французское миндальное печенье</td>
+              <td>150 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>Средний чек: 1250 рублей</strong></p>
+      </section>
+
+      <!-- Раздел 3: Галерея -->
+      <section id="gallery">
+        <h2 align="center">Наше кофе</h2>
+
+        <p></p>
+
+        <div class="image-gallery">
+          <a
+            href="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+            target="_blank"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
+              alt="Приготовление кофе"
+              class="thumbnail"
+            />
+          </a>
+          <a
+            href="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+            target="_blank"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
+              alt="Разные виды кофе"
+              class="thumbnail"
+            />
+          </a>
+          <a
+            href="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+            target="_blank"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
+              alt="Капучино с рисунком"
+              class="thumbnail"
+            />
+          </a>
+        </div>
+
+       
+        </div>
+
+    
+      </section>
+
+      <!-- Раздел 4: Контактная форма -->
+      <section id="contacts">
+        <h2 align = "center">Свяжитесь с нами</h2>
+
+        <div class="form-container">
+          <h3>Форма обратной связ  и</h3>
+          <form action="https://httpbin.org/post" method="POST">
+            <div class="form-group">
+              <label for="lastname">Фамилия:</label>
+              <input type="text" id="lastname" name="lastname"  />
+            </div>
+
+            <div class="form-group">
+              <label for="firstname">Имя:</label>
+              <input type="text" id="firstname" name="firstname" />
+            </div>
+
+            <div class="form-group">
+              <label for="group">Группа (для студентов):</label>
+              <input type="text" id="group" name="group" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Мобильный телефон:</label>
+              <input type="tel" id="phone" name="phone"  />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Электронная почта:</label>
+              <input type="email" id="email" name="email"/>
+            </div>
+
+            <div class="form-group">
+              <label for="message_date">Дата отправки:</label>
+              <input
+                type="date"
+                id="message_date"
+                name="message_date"
+
+              />
+            </div>
+
+            <input type="hidden" name="form_type" value="contact" />
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+     
+  </body>
+</html>
