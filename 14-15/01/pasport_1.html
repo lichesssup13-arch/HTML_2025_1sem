@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Контрольная работа</title>
+  </head>
+
+  <body>
+    <!-- document.getElementById("lastname2").innerText
+document.getElementById("firstname2").innerText
+document.getElementById("birthdate2").innerText
+-->
+    <!-- Навигация -->
+    <nav>
+      <ul>
+        <li><a href="pasport_1p.html">Главная</a></li>
+
+        <li><a href="algoritm_ex.html">Алгоритмическая задачан</a></li>
+      </ul>
+    </nav>
+
+    <div class="passport">
+      <!-- Вторая страница паспорта -->
+      <div class="passport-page">
+        <div class="passport-header">
+          <h3>Страница 2</h3>
+        </div>
+        <div class="passport-data">
+          <p>
+            <span class="data-label">Фамилия:</span>
+            <span id="lastname2">Попова</span>
+          </p>
+          <p>
+            <span class="data-label">Имя:</span>
+            <span id="firstname2">Елена</span>
+          </p>
+          <p>
+            <span class="data-label">Отчество:</span>
+            <span id="middlename2">Алексеевна</span>
+          </p>
+          <p>
+            <span class="data-label">Пол:</span> <span id="gender2">МУЖ.</span>
+          </p>
+          <p>
+            <span class="data-label">Дата рождения:</span>
+            <span id="birthdate2">15.04.1990</span>
+          </p>
+          <p>
+            <span class="data-label">Место рождения:</span>
+            <span id="birthplace2">гор. Москва</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Третья страница паспорта -->
+      <div class="passport-page">
+        <div class="passport-header">
+          <h3>Страница 3</h3>
+          <p>Российская Федерация</p>
+        </div>
+        <div class="passport-data">
+          <p>
+            <span class="data-label">Дата выдачи:</span>
+            <span id="issue-date2">20.05.2015</span>
+          </p>
+          <p>
+            <span class="data-label">Код подразделения:</span>
+            <span id="department-code2">770-001</span>
+          </p>
+          <p>
+            <span class="data-label">Орган, выдавший документ:</span>
+            <span id="issued-by2">ОУФМС России по г. Москве</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="convertToLatin()">Заменить кириллицу на латиницу</button>
+    <button onclick="resetToCyrillic()">Вернуть кириллицу</button>
+
+    <script>
+      // Задача 2: Замена кириллицы на латиницу
+      function convertToLatin() {
+        document.getElementById("lastname2").innerText = "Ivanov";
+        document.getElementById("firstname2").innerText = "Petr";
+        document.getElementById("birthdate2").innerText = "15.04.1990";
+      }
+
+      function resetToCyrillic() {
+        document.getElementById("lastname2").innerText = "Иванов";
+        document.getElementById("firstname2").innerText = "Петр";
+        document.getElementById("birthdate2").innerText = "15.04.1990";
+      }
+    </script>
+  </body>
+</html>
