@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контрольная работа - DOM, JS и алгоритмы</title>
-
+    <style>
+      
+      .nav-active {
+        background-color: #8B4513;
+        font-weight: bold;
+        color: #FFF;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+        display: block;
+      }
+      ul li a:hover {
+        background-color: #DEB887;
+      }
+    </style>
 </head>
 <body>
     
@@ -12,20 +30,40 @@
         <!-- Задача 3: Алгоритмическая задача -->
         <section id="task3" class="task-section">
             <h2>Решение алгоритмической задачи</h2>
-              <p><strong>Условие задачи:</strong> Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</p>
+            
+            <div class="explanation">
+                <p><strong>Условие задачи:</strong> Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</p>
+            </div>
+            
+            <div class="algorithm-form">
                 <h3>Определение знака числа</h3>
+                
+                <div class="form-group">
                     <label for="numberInput">Введите вещественное число:</label>
                     <input type="number" id="numberInput" step="any" placeholder="Например: 3.14, -2.5, 0">
+                </div>
+                
                 <button onclick="detNumberSign()">Определить знак числа</button>
+                
+                <div id="result" class="result" style="display: none;"></div>
+            </div>
+            
+       
         </section>
-    <script>     
+    </div>
+
+    <script>
+  
+        
         // Задача 3: Определение знака числа
         function detNumberSign() {
             const input = document.getElementById('numberInput').value;
             const number = parseFloat(input);
             const resultElement = document.getElementById('result');
+            
             if (isNaN(number)) {
                 resultElement.textContent = 'Пожалуйста, введите корректное число';
+
             } else if (number > 0) {
                 resultElement.textContent = `Число ${number} является положительным`;
                 resultElement.className = 'result positive';
@@ -36,6 +74,7 @@
                 resultElement.textContent = `Число ${number} является нулем`;
                 resultElement.className = 'result zero';
             }
+            
             resultElement.style.display = 'block';
         }
     </script>
