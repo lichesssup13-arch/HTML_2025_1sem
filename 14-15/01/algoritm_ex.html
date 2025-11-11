@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контрольная работа - DOM, JS и алгоритмы</title>
+
+</head>
+<body>
+    
+
+        <!-- Задача 3: Алгоритмическая задача -->
+        <section id="task3" class="task-section">
+            <h2>Решение алгоритмической задачи</h2>
+              <p><strong>Условие задачи:</strong> Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</p>
+                <h3>Определение знака числа</h3>
+                    <label for="numberInput">Введите вещественное число:</label>
+                    <input type="number" id="numberInput" step="any" placeholder="Например: 3.14, -2.5, 0">
+                <button onclick="detNumberSign()">Определить знак числа</button>
+        </section>
+    <script>     
+        // Задача 3: Определение знака числа
+        function detNumberSign() {
+            const input = document.getElementById('numberInput').value;
+            const number = parseFloat(input);
+            const resultElement = document.getElementById('result');
+            if (isNaN(number)) {
+                resultElement.textContent = 'Пожалуйста, введите корректное число';
+            } else if (number > 0) {
+                resultElement.textContent = `Число ${number} является положительным`;
+                resultElement.className = 'result positive';
+            } else if (number < 0) {
+                resultElement.textContent = `Число ${number} является отрицательным`;
+                resultElement.className = 'result negative';
+            } else {
+                resultElement.textContent = `Число ${number} является нулем`;
+                resultElement.className = 'result zero';
+            }
+            resultElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
