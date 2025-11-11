@@ -43,7 +43,7 @@
             <a
               href="partner.html"
 
-              >Наши партнеры</a
+              >Наши филиалы</a
             >
           </li>
          
@@ -127,7 +127,12 @@
       <section id="menu">
         <h2 align="center">Наше меню</h2>
         <!--ОФОРМИТЬ ТАБЛИЦУ-->
-        <table>
+        <table   align="center"
+              clspacing="0"
+              cellpadding="10"
+              border="1"
+              width="700px"
+              <tr="">
           <thead>
             <tr>
               <th>Категория</th>
@@ -177,50 +182,40 @@
           </tbody>
         </table>
 
-        <p><strong>Средний чек: 1250 рублей</strong></p>
+       
       </section>
 
       <!-- Раздел 3: Галерея -->
       <section id="gallery">
-        <h2 align="center">Наше кофе</h2>
+        <h2 align="center">Наше кaфе</h2>
 
         <p></p>
+<table  align="center"
+              clspacing="0"
+              cellpadding="10"
+              border="1"
+              width="700px">
+                <tbody>
+                    <tr> 
+                        <td height="200px" width="200px">
+                             <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5" target="_blank"><img src="cofeimg.jpg" width="180"></a>
+                     
+                        </td>
+                        <td height="200px" width="200px">
+                         <a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%81%D0%B5%D1%80%D1%82" target="_blank"><img src="desert.jpg" width="180"></a>
+                     
+                        </td>
+                        </td>
+                        <td height="200px" width="200px">
+                     <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5%D0%B9%D0%BD%D1%8F" target="_blank"><img src="coferoom.jpg" width="180"></a>
+                     
+                        </td>
+                        </td>
+                    </tr>
+                </tbody>
 
-        <div class="image-gallery">
-          <a
-            href="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
-            target="_blank"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
-              alt="Приготовление кофе"
-              class="thumbnail"
-            />
-          </a>
-          <a
-            href="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
-            target="_blank"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
-              alt="Разные виды кофе"
-              class="thumbnail"
-            />
-          </a>
-          <a
-            href="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
-            target="_blank"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
-              alt="Капучино с рисунком"
-              class="thumbnail"
-            />
-          </a>
-        </div>
+</table>
 
-       
-        </div>
 
     
       </section>
@@ -230,50 +225,53 @@
         <h2 align = "center">Свяжитесь с нами</h2>
 
         <div class="form-container">
-          <h3>Форма обратной связ  и</h3>
-          <form action="https://httpbin.org/post" method="POST">
-            <div class="form-group">
-              <label for="lastname">Фамилия:</label>
-              <input type="text" id="lastname" name="lastname"  />
-            </div>
+      <form
+        action="https://www.bing.com/search?"
+        id="UserEnter"
+        name="UserEnter"
+        target="_blank"
 
-            <div class="form-group">
-              <label for="firstname">Имя:</label>
-              <input type="text" id="firstname" name="firstname" />
-            </div>
+      >
+        <p>Форма обратной связи:<input type="hidden" name="q" value="search" /></p>
 
-            <div class="form-group">
-              <label for="group">Группа (для студентов):</label>
-              <input type="text" id="group" name="group" />
-            </div>
+       
+              <p for="lastname">Фамилия:  <input type="text" id="lastname" name="lastname"  /></p>
+             
+              <p for="firstname">Имя:     <input type="text" id="firstname" name="firstname" /></p>
+          
+              <p for="group">Группа (для студентов):         <input type="text" id="group" name="group" /></p>
+     
 
-            <div class="form-group">
-              <label for="phone">Мобильный телефон:</label>
-              <input type="tel" id="phone" name="phone"  />
-            </div>
 
-            <div class="form-group">
-              <label for="email">Электронная почта:</label>
-              <input type="email" id="email" name="email"/>
-            </div>
+              <p for="phone">Мобильный телефон:               <input type="tel" id="phone" name="phone"  /></p>
 
-            <div class="form-group">
-              <label for="message_date">Дата отправки:</label>
-              <input
+   
+
+
+              <p for="email">Электронная почта:       <input type="email" id="email" name="email"/></p>
+        
+
+
+  
+              <p for="message_date">Дата отправки:             <input
                 type="date"
                 id="message_date"
                 name="message_date"
 
-              />
-            </div>
+              /></p>
+ 
 
-            <input type="hidden" name="form_type" value="contact" />
+        <input type="hidden" name="function" value="page" />
+        <input type="hidden" name="page_id" value="3" />
 
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
+        <p>
+          <input type="Reset" name="Reset" value="Обновить" />
+          <input type="Submit" name="submit" value="Отправить" />
+        </p>
+      </form>
       </section>
 
      
   </body>
 </html>
+
