@@ -3,165 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <title>Сделать заказ</title>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Кофейня "Уютный уголок"</title>
-      <style>
-        .nav-active {
-          background-color: #4e6bff7e;
-          font-weight: bold;
-          color: #fff;
-          padding: 5px;
-          border-radius: 3px;
-        }
-        ul li a {
-          text-decoration: none;
-          color: #333;
-          padding: 5px;
-          display: block;
-        }
-        ul li a:hover {
-          background-color: #a9b5ff;
-        }
-      </style>
-    </head>
+   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кофейня "Уютный уголок"</title>
+    <!-- <style>
+
+      .nav-active {
+        background-color: #4e6bff7e;
+        font-weight: bold;
+        color: #fff;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+        display: block;
+      }
+      ul li a:hover {
+        background-color: #a9b5ff;
+      }
+    </style> -->
+           <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous"
+   />
+   
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+   <link rel="manifest" href="/site.webmanifest" />
+   <style>
+     body {
+        padding: 40px;
+    }
+     .rounded-img {
+       width: 60%;
+       border-radius: 50%;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+       padding: 0.6em;
+       margin-bottom: 1em;
+     }
+     .roundedsmal-img {
+       border-radius: 50%;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+   
+       margin-bottom: 1em;
+     }
+   </style>
+  </head>
     <body>
       <!-- Навигация -->
-      <nav>
-        <ul>
-          <li><a href="example.html">Главная</a></li>
-
-          <li><a href="order.html" class="nav-active">Заказ онлайн</a></li>
-          <li>
-            <a
-              href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5"
-              target="_blank"
-              >История кофе</a
-            >
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand p-0" href="example.html">
+        <img class ="roundedsmal-img" src="cofeimg.jpg" alt="Logo" width="40" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="example.html">Главная</a>
           </li>
-          <li>
-            <a href="partner.html">Наши филиалы</a>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5" target="_blank"> История кофе</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="order.html" > Заказ Онлайн</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="partner.html" > Меню </a>
           </li>
         </ul>
-      </nav>
+      </div>
+    </div>
+  </nav>
+  <p></p>
+   <h1 align="center">Кофейня "Уютный уголок"</h1>
 
       <!-- Раздел 5: Форма заказа -->
 
-      <h2 align="center">Онлайн заказ</h2>
+ <div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <h2 class="text-center fs-5 text-warning 4">Онлайн заказ</h2>
+            
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                        <input type="hidden" name="q" value="search" />
+                        
+                        <h5 class="fw-bold text-warning mb-3">Введите данные:</h5>
 
-      <form
-        action="https://www.bing.com/search?"
-        id="UserEnter"
-        name="UserEnter"
-        target="_blank"
-        align="center"
-      >
-        <p>Введите данные:<input type="hidden" name="q" value="search" /></p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                            <input type="text" class="form-control" placeholder="Введите ваше имя" aria-label="Username" value="Кирилл Пирожков" />
+                        </div>
 
-        <p for="customer_name">
-          Ваше имя:
-          <input
-            type="text"
-            id="customer_n ame"
-            name="customer_name"
-            size="20"
-            value="Kирилл Пирожков"
-            required
-          />
-        </p>
-        <p for="order_date">
-          Дата получения заказа:
-          <input type="date" id="order_date" name="order_date" required />
-        </p>
+                        <div class="mb-3">
+                            <label for="order_date" class="fw-semibold text-warning mb-2">Дата получения заказа:</label>
+                            <input type="date" class="form-control" id="order_date" name="order_date">
+                        </div>
 
-        <p>Выберите напиток:</p>
+                        <div class="mb-3">
+                            <p class="fw-semibold text-warning mb-2">Выберите напиток:</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="espresso" name="drink" value="espresso">
+                                <label class="form-check-label" for="espresso">
+                                    Эспрессо (180 ₽)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="americano" name="drink" value="americano">
+                                <label class="form-check-label" for="americano">
+                                    Американо (200 ₽)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="cappuccino" name="drink" value="cappuccino" checked>
+                                <label class="form-check-label" for="cappuccino">
+                                    Капучино (250 ₽)
+                                </label>
+                            </div>
+                        </div>
 
-        <p for="espresso">
-          <input
-            type="radio"
-            id="espresso"
-            name="drink"
-            value="espresso"
-            checked
-          />Эспрессо (180 ₽)
-        </p>
+                        <div class="mb-3">
+                            <p class="fw-semibold text-warning mb-2">Добавки:</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="milk" value="milk">
+                                <label class="form-check-label" for="milk">
+                                    Молоко (30 ₽)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cinnamon" name="additives" value="cinnamon" checked>
+                                <label class="form-check-label" for="cinnamon">
+                                    Корица (20 ₽)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="syrup" name="additives" checked>
+                                <label class="form-check-label" for="syrup">
+                                    Сироп (40 ₽)
+                                </label>
+                            </div>
+                        </div>
 
-        <p for="cappuccino">
-          <input
-            type="radio"
-            id="cappuccino"
-            name="drink"
-            value="cappuccino"
-          />Капучино (250 ₽)
-        </p>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label fw-semibold">Количество:</label>
+                            <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="10" value="1" required style="max-width: 120px;">
+                        </div>
 
-        <p for="americano">
-          <input
-            type="radio"
-            id="americano"
-            name="drink"
-            value="americano"
-          />Американо (200 ₽)
-        </p>
+                        <div class="mb-3">
+                            <label for="password" class="form-label fw-semibold">Пароль для изменения заказа:</label>
+                            <input type="password" class="form-control" id="password" name="password" style="max-width: 250px;">
+                        </div>
 
-        <p>Добавки:</p>
+                        <div class="mb-4">
+                            <label for="comment" class="form-label fw-semibold">Комментарий к заказу:</label>
+                            <textarea class="form-control" id="comment" aria-label="Комментарий" rows="3"></textarea>
+                        </div>
 
-        <p for="milk">
-          <input type="checkbox" id="milk" name="additives" value="milk" />
-          Молоко (30 ₽)
-        </p>
+                        <input type="hidden" name="function" value="page" />
+                        <input type="hidden" name="page_id" value="3" />
 
-        <p for="cinnamon">
-          <input
-            type="checkbox"
-            id="cinnamon"
-            name="additives"
-            value="cinnamon"
-          />Корица (20 ₽)
-        </p>
-
-        <p for="syrup">
-          <input
-            type="checkbox"
-            id="syrup"
-            name="additives"
-            value="syrup"
-          />Сироп (40 ₽)
-        </p>
-
-        <p for="quantity">
-          Количество:
-          <input
-            type="number"
-            id="quantity"
-            name="quantity"
-            min="1"
-            max="10"
-            value="1"
-            required
-          />
-        </p>
-
-        <p for="password">
-          Пароль для изменения заказа:
-
-          <input type="password" id="password" name="password" />
-        </p>
-
-        <p for="comments">
-          Комментарии к заказу:
-          <textarea id="comments" name="comments" rows="4"></textarea>
-        </p>
-
-        <input type="hidden" name="function" value="page" />
-        <input type="hidden" name="page_id" value="3" />
-
-        <p>
-          <input type="Reset" name="Reset" value="Обновить" />
-          <input type="Submit" name="submit" value="Отправить" />
-        </p>
-      </form>
+                        <div class="d-flex gap-3 justify-content-end">
+                            <input type="reset" class="btn btn-outline-secondary" name="Reset" value="Обновить">
+                            <input type="submit" class="btn btn-warning" name="submit" value="Отправить заказ">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </body>
-  </head>
+
+
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>
