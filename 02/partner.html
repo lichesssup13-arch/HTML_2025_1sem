@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кофейня "Уютный уголок"</title>
-    <style>
+    <!-- <style>
+
       .nav-active {
         background-color: #4e6bff7e;
         font-weight: bold;
@@ -21,129 +22,355 @@
       ul li a:hover {
         background-color: #a9b5ff;
       }
+    </style> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      body {
+        padding: 40px;
+      }
+      .rounded-img {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        padding: 0.6em;
+        margin-bottom: 1em;
+      }
+      .roundedsmal-img {
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+        margin-bottom: 1em;
+      }
     </style>
   </head>
   <body>
-    <h1>Кофейня "Уютный уголок"</h1>
     <!-- Навигация -->
-    <nav>
-      <ul>
-        <li><a href="example.html">Главная</a></li>
-
-        <li><a href="order.html">Заказ онлайн</a></li>
-        <li>
-          <a
-            href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5"
-            target="_blank"
-            >История кофе</a
-          >
-        </li>
-        <li>
-          <a href="partner.html" class="nav-active">Наши филиалы</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand p-0" href="example.html">
+          <img
+            class="roundedsmal-img"
+            src="cofeimg.jpg"
+            alt="Logo"
+            width="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="example.html"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5"
+                target="_blank"
+              >
+                История кофе</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html"> Заказ Онлайн</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="partner.html"> Меню </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
+    <h1 align="center">Кофейня "Уютный уголок"</h1>
 
-        <tr>
-          <td>
-            <h3 align="center">
-             
-            </h3>
+    <pre></pre>
+    <div class="card-body">
+      <h2 class="card-title text-center mb-4">Меню</h2>
+      <div class="row justify-content-center" id="menu_items">
+        <!-- Кофе -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://i.pinimg.com/736x/c1/45/28/c1452876c97341f65cc6d625a6b7bfaf.jpg"
+              alt="Эспрессо"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Эспрессо</h5>
+              <p class="card-text flex-grow-1">
+                Классический крепкий кофе, приготовленный под давлением
+              </p>
+              <p class="card-text"><strong>Цена: 180 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Объём: 30 мл</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <pre></pre>
-            <table
-              elalign="center"
-              clspacing="0"
-              cellpadding="10"
-              border="1"
-              width="700px"
-              <tr=""
-            >
-              <tbody>
-                <tr>
-                  <td
-                    colspan="3"
-                    bgcolor="ivory"
-                    background="../"
-                    height="50px"
-                  >
-                    <h2 align="center">
-                      <font
-                        color="dimgray"
-                        ,=""
-                        face="Palatino Linotype"
-                        size="3"
-                      >
-                        Главный филиал кофейни "Уютный уголок"
-                      </font>
-                    </h2>
-                  </td>
-                </tr>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://api.patrickmary.ru/api/file/Nomenclature729x475/12914/5f291158-4522-11e7-b670-6cae8b1f237d_99-0021080_729x475.jpg?ver=2025101810"
+              alt="Капучино"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Капучино</h5>
+              <p class="card-text flex-grow-1">
+                Идеальное сочетание эспрессо, молока и молочной пенки
+              </p>
+              <p class="card-text"><strong>Цена: 250 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Объём: 180 мл</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <tr>
-                  <td height="200px">
-                    <h2 align="center">
-                      <font
-                        color="dimgray"
-                        ,=""
-                        face="Palatino Linotype"
-                        size="3"
-                        >
-                      </font>
-                    </h2>
-                  </td>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://i.pinimg.com/originals/70/81/fb/7081fbdf8079d932936c9182d582afe6.jpg"
+              alt="Латте"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Латте</h5>
+              <p class="card-text flex-grow-1">
+                Нежный кофейный напиток с большим количеством вспененного молока
+              </p>
+              <p class="card-text"><strong>Цена: 280 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Объём: 300 мл</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                  <td bgcolor="ivory" width="300px">
-                   <a href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_mayakovskogo_23_6/Z0kYdQJlT0EBQFtjfXVyeHRmYw==/?ll=30.366545%2C59.930759&z=13.19"> <img src="may.png" width="200" /></a> 
-                    <br />
-                    <p align="light">
-                      <font
-                        color="dimgray"
-                        ,=""
-                        face="Palatino Linotype"
-                        size="3"
-                      >
-                        ул. Маяковского 23/6
-                      </font>
-                    </p>
-                  </td>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://i.pinimg.com/736x/eb/4a/24/eb4a24d39a4a174a95f42219fe18d3b1.jpg"
+              alt="Американо"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Американо</h5>
+              <p class="card-text flex-grow-1">
+                Эспрессо с добавлением горячей воды - для тех, кто любит
+                покрепче
+              </p>
+              <p class="card-text"><strong>Цена: 200 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Объём: 180 мл</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                  <td>
-                    <h2 align="center">
-                      <font
-                        color="dimgray"
-                        ,=""
-                        face="Palatino Linotype"
-                        size="3"
-                        >Каждый день вкуснейшие завтраки, обеды и ужины. Всегда
-                        самые свежие булки и десерты от именитых кандитеров.
-                        Уникальная рецептура и дизайн
-                      </font>
-                    </h2>
-                  </td>
-                </tr>
+        <!-- Десерты -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1H7gbo.img?w=1000&h=707&m=4&q=99"
+              alt="Тирамису"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Тирамису</h5>
+              <p class="card-text flex-grow-1">
+                Классический итальянский десерт с кофейным вкусом
+              </p>
+              <p class="card-text"><strong>Цена: 350 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Порция: 150 г</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <tr>
-                  <td colspan="3" height="100px">
-                    <p align="center">
-                      <font
-                        color="dimgray"
-                        ,=""
-                        face="Palatino Linotype"
-                        size="3"
-                      >
-                        Мы с нетерпением ждем ваши отзывы
-                      </font>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://i.pinimg.com/736x/a6/aa/f4/a6aaf4b47f2ed3591773de9868713215.jpg"
+              alt="Чизкейк"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Чизкейк Нью-Йорк</h5>
+              <p class="card-text flex-grow-1">
+                Нежный творожный десерт с ягодным соусом
+              </p>
+              <p class="card-text"><strong>Цена: 320 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Порция: 180 г</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6795d4ef27d7ed76984d6521_6795d5dd2033f6587faec5bd/scale_1200"
+              alt="Круассан"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Миндальный круассан</h5>
+              <p class="card-text flex-grow-1">
+                Слоёная выпечка с миндальной начинкой
+              </p>
+              <p class="card-text"><strong>Цена: 150 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">1 шт.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://i.pinimg.com/736x/7e/ba/4c/7eba4c72312e1695f0876003f04d198d.jpg"
+              alt="Макаруны"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Макаруны</h5>
+              <p class="card-text flex-grow-1">
+                Нежное французское печенье с различными вкусами
+              </p>
+              <p class="card-text"><strong>Цена: 120 руб./шт.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Ассорти вкусов</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Чай и другие напитки -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://i.pinimg.com/originals/dc/52/8d/dc528d1afcd45512343fc3ed20193138.jpg"
+              alt="Матча латте"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Матча Латте</h5>
+              <p class="card-text flex-grow-1">
+                Традиционный японский чай с молоком
+              </p>
+              <p class="card-text"><strong>Цена: 300 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Объём: 300 мл</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://www.heartofherbs.com/wp-content/uploads/2024/01/tea-blending.png"
+              alt="Травяной чай"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Травяной чай</h5>
+              <p class="card-text flex-grow-1">
+                Успокаивающий сбор из целебных трав
+              </p>
+              <p class="card-text"><strong>Цена: 220 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Объём: 400 мл</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://img.freepik.com/free-photo/dark-chocolate-dessert-rustic-wooden-table-generated-by-ai_188544-22970.jpg?semt=ais_hybrid&w=740&q=80"
+              alt="Горячий шоколад"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Горячий шоколад</h5>
+              <p class="card-text flex-grow-1">
+                Насыщенный шоколадный напиток со взбитыми сливками
+              </p>
+              <p class="card-text"><strong>Цена: 270 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Объём: 250 мл</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card h-100 d-flex flex-column">
+            <img
+              class="card-img-top responsive-img mt-2"
+              src="https://i.internethaber.com/storage/files/images/2019/11/14/taze-sikilmis-meyve-suyu-kilo-aldi-TboE.jpg"
+              alt="Лимонад"
+              style="height: 200px; object-fit: contain"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Фруктовый лимонад</h5>
+              <p class="card-text flex-grow-1">
+                Свежевыжатый сок из сезонных фруктов
+              </p>
+              <p class="card-text"><strong>Цена: 280 руб.</strong></p>
+              <div class="mt-auto">
+                <small class="text-muted">Объём: 300 мл</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <div class="alert alert-info">
+          <h6>🍃 Все продукты готовятся из свежих продуктов</h6>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-
