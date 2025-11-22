@@ -4,78 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кофейня "Уютный уголок"</title>
-    <style>
+           <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous"
+   />
+   
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+   <link rel="manifest" href="/site.webmanifest" />
+   <style>
+          .btn-outline-custom {
+  color: #FF8C00; 
+  border-color: #FF8C00;
+}
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #FF8C00;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+}
+.bd-callout-warning {
+    border-left-color: #f9b115;
+    background-color: #d0a51b;
+    color: #856404;
+    border: 1px solid rgba(0,0,0,.125);
+    border-left-width: 0.25rem;
+    padding: 1.25rem;
+    margin: 1rem 0;
+    border-radius: 0.25rem;
+}
+.section-highlight {
+    background-color: yellow;
+    padding: 20px;
+}
 
-      .nav-active {
-        background-color: #4e6bff7e;
-        font-weight: bold;
-        color: #fff;
-        padding: 5px;
-        border-radius: 3px;
-      }
-      ul li a {
-        text-decoration: none;
-        color: #333;
-        padding: 5px;
-        display: block;
-      }
-      ul li a:hover {
-        background-color: #a9b5ff;
-      }
-    </style>
+  .btn-outline-custom:hover {
+  color: #ffd7a5;
+  background-color: #FF8C00;
+  border-color: #FF8C00;
+} 
+         body {
+        padding: 20px;
+    }
+     .rounded-img {
+       width: 60%;
+       border-radius: 50%;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+       padding: 0.6em;
+       margin-bottom: 1em;
+     }
+     .section-highlight {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #0055ff;
+}
+     .roundedsmal-img {
+       border-radius: 50%;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+   
+       margin-bottom: 1em;
+     }
+   </style>
   </head>
   <body>
     <!-- Навигация -->
-    <nav>
-   
-        <ul>
-          <li><a href="#home" class="nav-active">Главная</a></li>
-
-          <li><a href="order.html" >Заказ онлайн</a></li>
-          <li>
-            <a
-              href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5"
-              target="_blank"
-              >История кофе</a
-            >
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand p-0" href="/">
+        <img class ="roundedsmal-img" src="cofeimg.jpg" alt="Logo" width="40" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Главная</a>
           </li>
-          <li>
-            <a
-              href="partner.html"
-
-              >Наши филиалы</a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5" target="_blank"> История кофе</a>
           </li>
-         
+          <li class="nav-item">
+            <a class="nav-link" href="order.html" > Заказ Онлайн</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="partner.html" > Меню </a>
+          </li>
         </ul>
-
-    </nav>
+      </div>
+    </div>
+  </nav>
 
     <!-- Главный заголовок -->
     <header id="home">
       <div class="container">
         <h1 align="center">Кофейня "Уютный уголок"</h1>
-        <p>Место, где каждый глоток кофе рассказывает свою историю</p>
+
       </div>
     </header>
 
     <div class="container">
-      <!-- Внутренняя навигация -->
-      <div class="internal-nav">
-        <a href="#section1">Наша философия</a>
-        <a href="#section2">Почему мы</a>
-        <a href="#section3">Отзывы</a>
-        <a href="#home">К началу</a>
-      </div>
+
+     <!-- Навигация внутри страницы -->
+     <div class="d-flex justify-content-center mb-4">
+         <div class="btn-group" role="group">
+   
+             <a class="btn btn-outline-custom" href="#section_1">Наша философия</a>
+             <a class="btn btn-outline-custom" href="#section_2">Почему мы</a>
+             <a class="btn btn-outline-custom" href="#section_3">Отзывы</a>
+         </div>
+     </div>
+
 
       <!-- Раздел 1: О нас -->
+       
       <section id="about">
         <h2 align="center">О нашей кофейне</h2>
 
-        <div id="section1">
+                <!-- Раздел 1 -->
+
+     <div class="bd-callout bd-callou-warning" id="section_1">
           <h3>Наша философия</h3>
-          <p>
-            Мы создали "Уютный уголок" как место, где каждый может найти свой
+          <ul class="list-unstyled">
+              Мы создали "Уютный уголок" как место, где каждый может найти свой
             идеальный кофе и насладиться моментом покоя в суете большого города.
           </p>
 
@@ -86,9 +151,15 @@
             <li>Экологичная упаковка и ответственное потребление</li>
             <li>Поддержка локальных производителей</li>
           </ul>
+            
+          </ul>
+                 <div class="d-grid gap-2 d-md-block">
+                   <button  class="btn btn-warning" type="button" href="#home">К началу</button>
+                </div>
         </div>
-
-        <div id="section2">
+<p> </p>
+                   <!-- Раздел 2 -->
+         <div class="bd-callout bd-callou-warning" id="section_2">
           <h3>Почему выбирают нас</h3>
           <ol>
             <li>Лучшие бариста города</li>
@@ -102,9 +173,12 @@
             <li>Уютная атмосфера для работы и отдыха</li>
             <li>Доступные цены при высоком качестве</li>
           </ol>
+               <div class="d-grid gap-2 d-md-block">
+                   <button  class="btn btn-warning" type="button" href="#home">К началу</button>
+                </div>
         </div>
-
-        <div id="section3">
+           <!-- Раздел 3 -->
+         <div class="bd-callout bd-callou-warning" id="section_3">
           <h3>Что говорят наши гости</h3>
           <p>Вот некоторые из отзывов наших постоянных посетителей:</p>
           <ul>
@@ -120,158 +194,81 @@
               "Тирамису просто восхитителен! Заказываю каждый раз." - Анна
             </li>
           </ul>
-        </div>
+
+             <div class="d-grid gap-2 d-md-block">
+                   <button  class="btn btn-warning" type="button" href="#home">К началу</button>
+                </div>
+                </div>
       </section>
 
-      <!-- Раздел 2: Меню -->
-      <section id="menu">
-        <h2 align="center">Наше меню</h2>
-        <!--ОФОРМИТЬ ТАБЛИЦУ-->
-        <table   align="center"
-              clspacing="0"
-              cellpadding="10"
-              border="1"
-              width="700px"
-              <tr="">
-          <thead>
-            <tr>
-              <th>Категория</th>
-              <th>Наименование</th>
-              <th>Описание</th>
-              <th>Цена</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td rowspan="3">Напитки</td>
-              <td>Эспрессо</td>
-              <td>Крепкий и ароматный кофе</td>
-              <td>180 ₽</td>
-            </tr>
-            <tr>
-              <td>Капучино</td>
-              <td>С молочной пенкой и рисунком</td>
-              <td>250 ₽</td>
-            </tr>
-            <tr>
-              <td>Американо</td>
-              <td>Классический черный кофе</td>
-              <td>200 ₽</td>
-            </tr>
-            <tr>
-              <td rowspan="4">Десерты</td>
-              <td>Чизкейк</td>
-              <td>Нью-Йоркский чизкейк</td>
-              <td>320 ₽</td>
-            </tr>
-            <tr>
-              <td>Тирамису</td>
-              <td>Итальянский десерт с кофе</td>
-              <td>350 ₽</td>
-            </tr>
-            <tr>
-              <td>Эклеры</td>
-              <td>С заварным кремом</td>
-              <td>180 ₽</td>
-            </tr>
-            <tr>
-              <td>Макаруны</td>
-              <td>Французское миндальное печенье</td>
-              <td>150 ₽</td>
-            </tr>
-          </tbody>
-        </table>
-
-       
-      </section>
-
-      <!-- Раздел 3: Галерея -->
-      <section id="gallery">
-        <h2 align="center">Наше кaфе</h2>
-
-        <p></p>
-<table  align="center"
-              clspacing="0"
-              cellpadding="10"
-              border="1"
-              width="700px">
-                <tbody>
-                    <tr> 
-                        <td height="200px" width="200px">
-                             <a href="https://lichesssup13-arch.github.io/HTML_2025_1sem/02/cofeimg.jpg" target="_blank"><img src="https://lichesssup13-arch.github.io/HTML_2025_1sem/02/cofeimg.jpg" width="180"></a>
-                     
-                        </td>
-                        <td height="200px" width="200px">
-                         <a href="desert.jpg" target="_blank"><img src="desert.jpg" width="180"></a>
-                     
-                        </td>
-                        </td>
-                        <td height="200px" width="200px">
-                     <a href="coferoom.jpg" target="_blank"><img src="coferoom.jpg" width="180"></a>
-                     
-                        </td>
-                        </td>
-                    </tr>
-                </tbody>
-
-</table>
-
-
-    
-      </section>
 
       <!-- Раздел 4: Контактная форма -->
-      <section id="contacts">
-        <h2 align = "center">Свяжитесь с нами</h2>
+     <section id="contacts" class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <h2 class="text-center mb-4">Свяжитесь с нами</h2>
 
-        <div class="form-container">
-      <form
-        action="https://www.bing.com/search?"
-        id="UserEnter"
-        name="UserEnter"
-        target="_blank"
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                        <input type="hidden" name="q" value="search" />
+                        
+                        <p class = "fw-bold text-warning mb-3" >Форма обратной связи:</p>
 
-      >
-        <p>Форма обратной связи:<input type="hidden" name="q" value="search" /></p>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="lastname" class="form-label">Фамилия:</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Введите вашу фамилию">
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="firstname" class="form-label">Имя:</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Введите ваше имя">
+                            </div>
+                        </div>
 
-       
-              <p for="lastname">Фамилия:  <input type="text" id="lastname" name="lastname"  /></p>
-             
-              <p for="firstname">Имя:     <input type="text" id="firstname" name="firstname" /></p>
-          
-              <p for="group">Группа (для студентов):         <input type="text" id="group" name="group" /></p>
-     
+                        <div class="mb-3">
+                            <label for="group" class="form-label">Группа (для студентов):</label>
+                            <input type="text" class="form-control" id="group" name="group" placeholder="Введите номер группы">
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Мобильный телефон:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+                        </div>
 
-              <p for="phone">Мобильный телефон:               <input type="tel" id="phone" name="phone"  /></p>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Электронная почта:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.ru">
+                        </div>
 
-   
+                        <div class="mb-4">
+                            <label for="message_date" class="form-label">Дата отправки:</label>
+                            <input type="date" class="form-control" id="message_date" name="message_date">
+                        </div>
 
+                        <input type="hidden" name="function" value="page" />
+                        <input type="hidden" name="page_id" value="3" />
 
-              <p for="email">Электронная почта:       <input type="email" id="email" name="email"/></p>
-        
-
-
-  
-              <p for="message_date">Дата отправки:             <input
-                type="date"
-                id="message_date"
-                name="message_date"
-
-              /></p>
- 
-
-        <input type="hidden" name="function" value="page" />
-        <input type="hidden" name="page_id" value="3" />
-
-        <p>
-          <input type="Reset" name="Reset" value="Обновить" />
-          <input type="Submit" name="submit" value="Отправить" />
-        </p>
-      </form>
-      </section>
+                        <div class="d-flex gap-3 justify-content-end">
+                         <input type="reset" class="btn btn-outline-secondary" name="Reset" value="Обновить">
+                       <input type="submit" class="btn btn-warning" name="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
      
   </body>
+
+
+  <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"
+   ></script>
 </html>
 
